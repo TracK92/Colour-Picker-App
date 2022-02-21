@@ -1,13 +1,114 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: cursive;
+}
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh; 
+  
+     
+}
+
+section {
+  font-size: 35px;
+  border: 1px gray solid;
+  width: 450px;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 3px;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  place-content: center;
+  text-align: center;
+  padding: 6px;
+}
+
+label {
+  position: absolute;
+  left: -99999px;
+}
+input[type='text'] {
+  width: 450px;
+  margin: 1rem;
+  min-height: 48px;
+  border: 3px gray solid;
+  border-radius: 6rem;
+  text-align: center;
+  font-size: 1.3rem;
+  outline: none;
+  box-shadow: 2px 2px 5px 3px;
+
+}
+::placeholder {
+  color: rgb(53, 4, 4);
+}
+form {
+  display: grid;
+}
+button {
+  width: 450px;
+  margin: auto;
+  min-height: 48px;
+  border: 1px gray solid;
+  border-radius: 15px;
+  background-color: aliceblue;
+  columns: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 2px 2px 5px 3px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (min-width: 480px) {
+  img {
+    margin-right: 25%;
+  }
+}
+@media screen and (min-width: 768px) {
+  img {
+    margin-right: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  img {
+    margin-right: 65%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  img {
+    margin-right: 70%;
+  }
+}
+header {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+  border-style: outset;
+  box-shadow: 0 5px 7px 0;
+  right: 0;
+  left: 0;
+
+  
+}
+h3 {
+  margin-top: 40px;
+  letter-spacing: 0.45rem;  
 }
